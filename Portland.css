@@ -1,0 +1,250 @@
+* { 
+box-sizing: border-box;
+} /* Universal selector*/
+
+body{
+  color: #878787;
+  margin: 0;
+  font-size: 1em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+  line-height: 1.4;
+  /* font: normal 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; */
+}
+
+.imgsize:hover{
+  transform: scale(1.1);
+
+}
+
+a:link {
+  color: #669900;
+  text-decoration: none;
+}
+
+a:visited {
+  color: orange;
+}
+
+a:hover {
+  color: forestgreen;
+}
+
+.main-header {
+  background-color: #669900; /* This makes the background color of the header green*/
+  padding-top: 170px;
+  height: 850px;
+  background-image: linear-gradient(transparent 70%, white),
+                    url('img/hood.jpg');             
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  
+  
+  /*background: #669900 url('../img/Mt.-Hood-View.jpg') no-repeat center / center 
+  This delcaration could be used in place of the 5 background properties I used.
+  */
+}
+
+.title {
+  color: white;
+  font-size: 1.625rem; /*   26px/16px = 1.625em   */
+}
+
+.arrow {
+    width: 150px;
+ 
+  }
+
+h1 {
+  font-size: 5.625rem; /*90px/16px = 5.625em*/
+  color: white;
+  font-weight: normal;
+  line-height: 1.3;
+  text-shadow: 4px 6px 10px orange;  
+}
+
+h2 {
+  font-size: 3.3125em; /* 53pm/15px */
+  text-decoration: underline;
+  font-weight: normal;
+  margin-bottom: .5em;
+}
+
+h3{
+  font-size: 1.25em; /* 20px/16px */
+  color: #48525c;
+  margin-bottom: 1.7em; /*34px/16px*/
+}
+ul{
+  list-style-type: thai;
+}
+li{
+  margin-bottom: 5px;
+}
+
+
+p{
+  font-weight: 500;
+}
+
+.primary-content,
+.main-header{
+  text-align: center;
+}
+
+.primary-content, 
+.secondary-content {
+  width: 85%; 
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 1100px;
+}
+
+.t-border{
+  border-top: 2px solid lightgrey;
+}
+
+.wildlife {
+  color: white;
+  background-image: url('img/opal.jpg');
+  background-size: cover;
+  background-color: #434a52;
+  padding: 9% 12%;
+  border-top: 10px solid #669900;
+  margin: 105px 0 60px;
+  box-shadow: inset 0 0 50px 10px rgba(0,0,0,.8);
+  border-radius: 5px 50px;
+}
+
+.adventureimg {
+  width: 170px;
+}
+.outdoorpics {
+  display: inline-block;
+}
+
+.secondary-content {
+  overflow: auto;
+  padding-bottom: 60px;
+  padding-top: 80px;
+}
+
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#callout2 {
+  margin-bottom: 110px;
+}
+ 
+.brew, .stores {
+  width: 40%;
+  
+}
+
+.stores{
+  float: right;
+}
+
+.brew {
+  float: left;
+}
+
+
+.imgsize{
+  width: 22em;
+  box-shadow: 5px 5px 30px #222;
+  border-radius: 10px 50px;
+}
+
+#main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: solid 10px #669900;
+  text-align: center;
+}
+
+
+/*Media Queries*/
+
+@media (max-width: 1000px) { 
+ .brew, 
+ .stores {
+  width: 80%;
+  float: left;
+  
+
+}
+
+
+.imgsize{
+  width: 22em;
+  box-shadow: 5px 5px 30px #222;
+  border-radius: 10px 50px;
+}
+}
+
+@media (max-width: 450px) { 
+ .brew, 
+ .stores {
+  width: 90%;
+  float: left;
+  
+
+}
+
+
+.imgsize{
+  width: 15em;
+  box-shadow: 5px 5px 30px #222;
+  border-radius: 10px 50px;
+}
+}
+  
+  
+/*  @media screen and (max-width: 480px) { 
+  body{
+  background:red;
+}
+    
+    
+@media (min-width: 481px)ad(max-width: 700px){
+      body{
+        background: pink;
+      }
+    }
+  
+p{
+  color: white;
+}
+}*/
+
+
+/*
+
+a:active {
+  color: black;
+}
+
+
+a:focus {
+  color: white;
+  background-color: black ;
+}
+*/
+  
+/*
+  border-width: 10px;
+  border-style: solid;
+  border-color: #669900;
+  
+  padding-top: 100px;
+  padding-right: 120px;
+  padding-bottom: 100px;
+  padding-left: 120px;
+*/   
